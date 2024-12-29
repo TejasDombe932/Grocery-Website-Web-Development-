@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&display=swap');
+
+*{
+   font-family: 'Nunito',sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition: all .2s linear;
+   text-transform: capitalize;
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+body{
+   background: hsl(0, 0%, 100%);
+   background-color: antiquewhite;
+}
+
+.container{
+   max-width: 800px;
+   margin:0 auto;
+   padding:3rem 2rem;
+}
+
+.container .title{
+   font-size: 3.5rem;
+   color:#fa8405;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+.container.title:hover{
+   
+   outline: .1rem solid #6ecbec;
+   outline-offset: 0;
+}
+
+.container .pro-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+   gap:2rem;
+}
+
+.container .products-container .pro{
+   text-align: center;
+   padding:3rem 2rem;
+   background: antiquewhite;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   outline: .1rem solid #ccc;
+   outline-offset: -1.5rem;
+   cursor: pointer;
+}
+
+.container .pro-container .pro:hover{
+outline: .1rem solid #060606;
+outline-offset: 1;
+padding: 1rem;
+}
+
+.container .pro-container .pro img{
+   height: 25rem;
+}
+
+.container .pro-container .pro:hover img{
+   transform: scale(.9);
+}
+
+.container .pro-container .pro h3{
+   padding:.5rem 0;
+   font-size: 2rem;
+   color:#444;
+}
+
+.container .pro-container .pro:hover h3{
+   color:#00ff51;
+}
+
+.container .pro-container .pro .price{
+   font-size: 2rem;
+   color:#000000;
+}
+
+
